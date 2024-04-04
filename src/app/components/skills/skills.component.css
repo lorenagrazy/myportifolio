@@ -1,0 +1,103 @@
+.skills {
+  min-height: 90vh;
+  background: none;
+}
+
+.skills h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #212529;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  margin-top: 3rem;
+  
+}
+.skills h2:hover {
+  color: #8c2f39;
+}
+
+.skills .container {
+  background: #ecf8f8;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 4rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.skills .container .row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  flex-wrap: wrap;
+  gap: 1.8rem;
+}
+
+.skills .container .bar {
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: #0e2431;
+  transition: 0.2s;
+
+}
+
+.skills .container .bar:hover {
+  transform: translateY(-5px); /* Eleva o conteúdo */
+  box-shadow: 0 8px 10px #8c2f39; /* Sombra ajustada */
+  background-color: #0e2431;
+}
+
+.skills .container .bar .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+.skills .container .bar .info i {
+  font-size: 4rem;
+}
+
+.skills .container .bar .info span {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Nunito", sans-serif;
+  margin-left: 0.5rem;
+}
+
+.skills .container .bar .info .icon {
+  width: 48px;
+  height: 48px;
+}
+.skills .heading .icon {
+  max-width: 3rem; /* Defina o tamanho máximo desejado */
+  height: auto; /* Mantenha a proporção original da imagem */
+  margin-right: 1rem ;
+}
+
+
+
+/* skills media queries starts*/
+@media screen and (max-width: 600px) {
+  .skills .container {
+    padding: 0;
+   margin-top: 2rem;
+  }
+
+  .skills .container .row {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 1rem;
+    padding: 1.7rem 1.7rem 1.7rem 1.7rem;
+    gap: 1rem;
+  }
+
+  .skills .container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 90%;
+  }
+}

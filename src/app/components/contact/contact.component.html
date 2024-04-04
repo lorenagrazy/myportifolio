@@ -1,0 +1,104 @@
+<section class="contact" id="contact">
+  <h2 class="heading">
+    <img class="icon" src="assets/contacteme.png" alt="skills" />
+    <span>Contact Me</span>
+  </h2>
+
+  <div class="container">
+    <div class="content">
+      <div class="image-box">
+        <img draggable="false" src="assets/ContacteMe2.svg" alt="" />
+      </div>
+
+      <form
+        action="https://formspree.io/f/xbjnzzvo"
+        method="POST"
+        [formGroup]="contactForm"
+        (ngSubmit)="submitForm()"
+      >
+        <div class="form-group">
+          <div class="field">
+            <i class="fas fa-user"></i>
+            <input
+              formControlName="name"
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div
+            *ngIf="name && name.invalid && (name.dirty || name.touched)"
+            class="error-message"
+          >
+            Name is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="field">
+            <i class="fas fa-envelope"></i>
+            <input
+              formControlName="email"
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <div
+            *ngIf="email && email.invalid && (email.dirty || email.touched)"
+            class="error-message"
+          >
+            Email is required and must be a valid email address.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="field">
+            <i class="fas fa-phone"></i>
+            <input
+              formControlName="phone"
+              type="tel"
+              name="phone"
+              placeholder="Phone"
+              required
+            />
+          </div>
+          <div
+            *ngIf="phone && phone.invalid && (phone.dirty || phone.touched)"
+            class="error-message"
+          >
+            A phone number with 10 digits is required.
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="message">
+            <i class="fas fa-comment-dots"></i>
+            <textarea
+              formControlName="body"
+              name="body"
+              rows="4"
+              cols="50"
+              placeholder="Message"
+              required
+            ></textarea>
+          </div>
+          <div
+            *ngIf="body && body.invalid && (body.dirty || body.touched)"
+            class="error-message"
+          >
+            Message is required.
+          </div>
+        </div>
+
+        <div class="button-area">
+          <button class="button" type="submit" [disabled]="contactForm.invalid">
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

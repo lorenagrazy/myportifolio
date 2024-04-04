@@ -1,0 +1,115 @@
+
+.heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #212529;
+  margin-bottom: 2rem;
+}
+
+.heading i {
+  margin-right: 0.5rem;
+  color: #6c757d;
+}
+
+.contact {
+  min-height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 4rem;
+  font-style: normal;
+  margin-bottom: 3rem;
+}
+
+.contact .container {
+  background: #ecf8f8;
+  border-radius: 2.5rem;
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.15);
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  margin-top: 7rem;
+}
+
+.contact .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column; /* Alterado para empilhar os elementos verticalmente em telas menores */
+  padding: 3.75rem 3rem;
+}
+
+.contact .content .image-box {
+  max-width: 100%;
+  margin-bottom: 1rem; /* Adicionado espaço abaixo da imagem */
+}
+
+.contact .content .image-box img {
+  width: 50%; /* Alterado para 50% para diminuir o tamanho da imagem */
+  height: auto;
+  max-height: 50rem;
+}
+
+.image-box {
+  width: 10rem; /* Alterado para 50% para diminuir o tamanho da imagem */
+  height: auto;
+}
+
+.text-box{
+  font-style: normal;
+  font-size: 1.4rem;
+  color: rgb(2, 25, 63);
+  font-weight: lighter;
+  line-height: 3rem;
+  text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  text-transform: none;
+}
+
+.contact .content .text-box {
+  flex: 1;
+}
+
+.contact .content h3 {
+  margin-top: 1rem;
+}
+
+.icon {
+  width: auto;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+span {
+  font-size: 2.5rem;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+span:hover {
+  color: #8c2f39;
+}
+
+.success {
+  width: 6rem;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .contact .container {
+    max-width: 90%;
+  }
+
+  .contact .content .image-box img {
+    width: 60%; /* Alterado para 100% em telas menores */
+  }
+
+  .contact .content .image-box {
+    margin-bottom: 1rem; /* Mantido espaço abaixo da imagem em telas menores */
+  }
+  
+}
