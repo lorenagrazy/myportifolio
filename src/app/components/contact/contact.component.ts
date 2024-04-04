@@ -45,7 +45,7 @@ export class ContactComponent implements OnInit {
   }
 
   phoneValidator(control: FormControl): { [s: string]: boolean } | null {
-    const PHONE_REGEXP = /^[0-9]{10}$/;
+    const PHONE_REGEXP = /^[0-9]{11}$/;
     if (!PHONE_REGEXP.test(control.value)) {
       return { 'invalidPhone': true };
     }
