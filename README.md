@@ -12,7 +12,7 @@ Project developed using Angular 16
 </p>
 
 <div align="center">
-<a href="myportifolio-murex.vercel.app">⚙️See how it works</a>
+<a href="https://myportifolio-murex.vercel.app/home">⚙️See how it works</a>
 </div>  
 
 <br>
